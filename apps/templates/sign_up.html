@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New user? Sign Up</title>
+</head>
+<body>
+    <h2>New user? Sign Up</h2>
+    <form action="/signUp" method="post">
+        <input type="hidden" name="email" value="{{ email }}"> <!-- Assuming email is passed to the template -->
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="text" name="userId" placeholder="User ID" required>
+        <input type="text" name="userName" placeholder="User Name" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
